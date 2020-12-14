@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
@@ -9,16 +11,16 @@ body {
   font-family: sans-serif;
   background-size: cover;
   min-height: 100vh;
-  background-color: rgba(187, 5, 187, 0.808);
 }
 
 .App {
-  position: absolute;
+  margin-left: 240px;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   background-color: #fff;
   box-shadow: 0 0 5px 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .header {
@@ -52,3 +54,40 @@ body {
   height: 50px;
   padding: 20px;
 }
+
+/* sidebar menu style*/
+
+.sidebar {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(187, 5, 187, 0.808);
+  color: #fff;
+  overflow-y: auto;
+}
+.sidebar-menu {
+  padding: 1rem;
+}
+.sidebar li {
+  margin-bottom: 1.5rem;
+}
+.sidebar-menu a {
+  color: #fff;
+}
+.btn-click {
+  background-color: transparent;
+  color: #fff;
+  border-style: none;
+  font-size: 15px;
+}
+/* .sidebar-menu a:hover {
+  background-color: #fff;
+  color: rgba(187, 5, 187, 0.808);
+}
+.menu-list li:a {
+  background-color: #fff;
+  color: rgba(187, 5, 187, 0.808);
+} */

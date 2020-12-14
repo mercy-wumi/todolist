@@ -7,13 +7,14 @@ const Todolist = ({todos, setTodos, filteredTodos}) => {
             <ul className= "list">
                 {filteredTodos.map((todo)=>( 
                          <Todo 
-                        setTodos={setTodos}
+                          setTodos={setTodos}
                           todo={todo}
                           todos={todos}
                           key={todo.id} 
                           text={todo.text}
                           />
                     ))}
+
             </ul>
         </div>
     );
